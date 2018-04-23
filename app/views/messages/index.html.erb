@@ -1,1 +1,7 @@
 <h1>here is our index view and root</h1>
+
+<% @messages.each do |message| %>
+  <h1><%= message.title %></h1>
+<% end %>
+
+<%= link_to "New message", new_message_path %>
